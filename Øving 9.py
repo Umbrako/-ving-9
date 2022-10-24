@@ -1,8 +1,12 @@
 # -----------------------------------------------------------
 #                     Oppgave d
 # -----------------------------------------------------------
-print("123")
-
+from datetime import datetime
+class avtale:
+  tittel = str()
+  sted = str()
+  tid = datetime.datetime(år, måned, dag_i_måneden, timer, minutter, sekunder)
+  varighet = int()
  
 # -----------------------------------------------------------
 #                     Oppgave e
