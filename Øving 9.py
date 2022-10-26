@@ -6,7 +6,7 @@ from datetime import datetime
 class avtale:
   tittel = str()
   sted = str()
-  tid = datetime.datetime(år, måned, dag_i_måneden, timer, minutter, sekunder)
+  tid = #datetime.datetime(år, måned, dag_i_måneden)
   varighet = int()
  
 # -----------------------------------------------------------
