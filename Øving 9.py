@@ -2,29 +2,24 @@
 #                     Oppgave d
 # -----------------------------------------------------------
 
-# from datetime import datetime
-# class avtale:
-#   tittel = str()
-#   sted = str()
-#   tid = #datetime.datetime(år, måned, dag_i_måneden)
-#   varighet = int()
+class Avtale:
+  def __init__(self, tittel, sted, start, varighet):
+    self.tittel = tittel
+    self.sted = sted
+    self.start = start
+    self.varighet = varighet
+
+a1 = Avtale("Nokasranet", "Nokas", 1200, 2)
+
+print(a1.tittel)
+print(a1.sted)
+print(a1.start)
+print(a1.varighet) 
  
 # -----------------------------------------------------------
 #                     Oppgave e
 # -----------------------------------------------------------
-class MyClass:
-    x = 0
-    y = ""
 
-    def __init__(self, anyNumber, anyString):
-        self.x = anyNumber
-        self.y = anyString
-
-myObject = MyClass(12345, "Hello")
-
-print(myObject.__str__())
-print(myObject.__repr__())
-print(myObject)
  
 # -----------------------------------------------------------
 #                     Oppgave f
