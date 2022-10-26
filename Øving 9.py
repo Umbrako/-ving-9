@@ -9,17 +9,17 @@ class Avtale:
     self.start = start
     self.varighet = varighet
 
-a1 = Avtale("Nokasranet", "Nokas", 1200, 2)
 
-print(a1.tittel)
-print(a1.sted)
-print(a1.start)
-print(a1.varighet) 
  
 # -----------------------------------------------------------
 #                     Oppgave e
 # -----------------------------------------------------------
 
+# a1 = Avtale("Nokasranet", "Nokas", 1200, 2)
+# print(a1.tittel)
+# print(a1.sted)
+# print(a1.start)
+# print(a1.varighet) 
  
 # -----------------------------------------------------------
 #                     Oppgave f
