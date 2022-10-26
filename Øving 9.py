@@ -1,7 +1,6 @@
 # -----------------------------------------------------------
 #                     Oppgave d
 # -----------------------------------------------------------
-
 class Avtale:
   def __init__(self, tittel, sted, start, varighet):
     self.tittel = tittel
@@ -15,6 +14,8 @@ print(a1.tittel)
 print(a1.sted)
 print(a1.start)
 print(a1.varighet) 
+
+#hei jørgen :)
  
 # -----------------------------------------------------------
 #                     Oppgave e
