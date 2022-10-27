@@ -8,12 +8,9 @@ class Avtale:
     self.start = start
     self.varighet = varighet
 
-#Eksempel
-a1 = Avtale("Nokasranet", "Nokas", 1200, 2)
 
-#Eksempel
-a2 = Avtale(input("Tittel:"), input("Sted:"), input("Start:"), input("Varighet:"))
-print(a2.tittel, a2.sted, a2.start, a2.varighet)
+
+
 
 
  
@@ -42,9 +39,10 @@ print(avtale.tittel)
 # -----------------------------------------------------------
 #                     Oppgave f
 # -----------------------------------------------------------
-# 
-# 
-# 
+a2 = Avtale(input("Tittel:"), input("Sted:"), input("Start:"), input("Varighet:"))
+print(a2.tittel, a2.sted, a2.start, a2.varighet) 
+
+ 
 # -----------------------------------------------------------
 #                     Oppgave g
 # -----------------------------------------------------------
