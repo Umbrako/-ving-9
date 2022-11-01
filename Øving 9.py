@@ -109,7 +109,7 @@ with open("group.json", "w") as outfile:
 #                     Oppgave k
 # -----------------------------------------------------------
 class Avtale5:
-  def __init__(self, tittel, sted, start, varighet): #constructor
+  def __init__(self, tittel, sted, start, varighet): 
     self.tittel = tittel
     self.sted = sted
     self.start = start
@@ -125,7 +125,7 @@ avtale1 = Avtale("Avtale 1", "", "", "")
 avtale2 = Avtale("Avtale 2", "", "", "")
 avtale3 = Avtale("absssss", "", "", "")
 
-#Liste
+
 liste = [avtale1, avtale2, avtale3]
 
 
