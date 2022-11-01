@@ -3,7 +3,7 @@
 # -----------------------------------------------------------
 from datetime import datetime
 
-class Avtale1:
+class Avtale:
   def __init__(self, tittel, sted, start, varighet):
     self.tittel = tittel
     self.sted = sted
@@ -25,7 +25,7 @@ print((datetime.fromisoformat("2000-09-20 12:00:00")))
 #                     Oppgave e
 # -----------------------------------------------------------
 
-class Avtale:
+class Avtale1:
   def __init__(self, tittel, sted):
     self.tittel = tittel
     self.sted = sted
@@ -33,7 +33,7 @@ class Avtale:
     def __str__(self):
         return f"tittel={self.tittel}, sted ={self.sted}"
 
-avtale = Avtale("Kvernevik", "Hafrsfjord")
+avtale = Avtale1("Kvernevik", "Hafrsfjord")
 
 print(avtale.tittel)    
 
