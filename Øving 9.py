@@ -111,9 +111,46 @@ def alle avta
 # -----------------------------------------------------------
 #                     Oppgave k
 # -----------------------------------------------------------
-# 
-# 
-# 
+class Avtale5:
+  def __init__(self, tittel, sted, start, varighet): 
+    self.tittel = tittel
+    self.sted = sted
+    self.start = start
+    self.varighet = varighet
+  
+
+  def get_tittel(self):
+    return self.tittel
+
+
+
+avtale1 = Avtale("Avtale 1", "", "", "")
+avtale2 = Avtale("Avtale 2", "", "", "")
+avtale3 = Avtale("absssss", "", "", "")
+
+
+liste = [avtale1, avtale2, avtale3]
+
+
+def funksjon(liste, streng):
+    returnList = []
+    for avtale in liste:
+        tittelValue = avtale.get_tittel()
+        if (tittelValue.find(streng) != -1):
+            returnList.append(avtale)
+    
+    return returnList
+
+
+
+print(funksjon(liste, "Avtale"))
+
+
+avtaler = funksjon(liste, "Avtale")
+for avtale in avtaler:
+    print(avtale.get_tittel())
+ 
+ 
 # -----------------------------------------------------------
 #                     Oppgave l
 # -----------------------------------------------------------
