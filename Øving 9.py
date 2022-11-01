@@ -91,7 +91,7 @@ with open("test.json", "w") as outfile:
     outfile.open(json_object)
     
     
-    
+        
 # -----------------------------------------------------------
 #                     Oppgave i
 # -----------------------------------------------------------
@@ -105,7 +105,13 @@ with open("test.json", "r") as outfile:
 # -----------------------------------------------------------
 #                     Oppgave j
 # -----------------------------------------------------------
-def alle avta
+def alle_avtaler_paa_dato(avtaler, dato):
+    avtaler_paa_dato = []
+    for avtale in avtaler:
+        avtale_dato = datetime.fromisoformat(avtale.start)
+        if avtale_dato >= dato:
+            avtaler.append(avtale)
+        return avtaler_paa_dato
 # 
 # 
 # -----------------------------------------------------------
