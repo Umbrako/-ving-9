@@ -1,14 +1,19 @@
 # -----------------------------------------------------------
 #                     Oppgave d
 # -----------------------------------------------------------
-import datetime
+from datetime import datetime
 
-class Avtale:
+class Avtale1:
   def __init__(self, tittel, sted, start, varighet):
     self.tittel = tittel
     self.sted = sted
     self.start = start
     self.varighet = varighet
+    
+now = datetime.now()
+dag = now.strftime("%H:%M:%S:")
+print(type(datetime.fromisoformat("2000-09-20 12:00:00")))
+print("Start", dag)
 
 
 
@@ -41,7 +46,7 @@ print(avtale.tittel)
 # -----------------------------------------------------------
 #                     Oppgave f
 # -----------------------------------------------------------
-a2 = Avtale(input("Tittel:"), input("Sted:"), input("Start:"), input("Varighet:"))
+a2 = Avtale1(input("Tittel:"), input("Sted:"), input("Start:"), input("Varighet:"))
 print(a2.tittel, a2.sted, a2.start, a2.varighet) 
 
  
