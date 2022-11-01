@@ -43,7 +43,7 @@ class Avtale2:
     self.start = start
     self.varighet = varighet
 
-a2 = Avtale2(input("Tittel:"), input("Sted:"), datetime.fromisoformat(input("Start:")), input("Varighet:"))
+a2 = Avtale2(input("Tittel:"), input("Sted:"), datetime.fromisoformat(input("Start (ÅÅÅÅ-MM-DD HH:MM:SS):")), input("Varighet:"))
 print()
 print("Avtale 2")
 print(a2.tittel) 
