@@ -80,12 +80,14 @@ print(deal.varighet)
 # -----------------------------------------------------------
 with open('readme.txt', 'w') as Avtaler:
     Avtaler.write('Create a new text file!')
+    
 # -----------------------------------------------------------
 #                     Oppgave i
 # -----------------------------------------------------------
-# 
-# 
-# 
+with open('readme.txt', 'r') as Avtaler:
+    linjer = Avtaler.readlines()
+    print(linjer)
+    Avtaler.close()
 # -----------------------------------------------------------
 #                     Oppgave j
 # -----------------------------------------------------------
