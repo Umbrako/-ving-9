@@ -57,7 +57,7 @@ print()
 # -----------------------------------------------------------
 #                     Oppgave g
 # -----------------------------------------------------------
-class Avtale3:
+class Banken:
   def __init__(self, tittel, sted, start, varighet):
     self.tittel = tittel
     self.sted = sted
@@ -67,8 +67,8 @@ class Avtale3:
     def __str__(self):
         return f"tittel={self.tittel}, sted ={self.sted}, start={self.start}, varighet ={self.varighet}"
  
-deal = Avtale3("Bankkort","DNB Arena",datetime.fromisoformat("2022-01-11 12:00:00"), "2 timer")
-print("Avtale 3")
+deal = Banken("Bankkort","DNB Arena",datetime.fromisoformat("2022-01-11 12:00:00"), "2 timer")
+print("Banken")
 print(deal.tittel)
 print(deal.sted)
 print(deal.start)
