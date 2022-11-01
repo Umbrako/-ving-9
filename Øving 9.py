@@ -1,6 +1,8 @@
 # -----------------------------------------------------------
 #                     Oppgave d
 # -----------------------------------------------------------
+import datetime
+
 class Avtale:
   def __init__(self, tittel, sted, start, varighet):
     self.tittel = tittel
