@@ -1,6 +1,7 @@
 # -----------------------------------------------------------
 #                     Oppgave d FERDIG
 # -----------------------------------------------------------
+import json 
 from datetime import datetime
 
 class Avtale:
@@ -78,15 +79,23 @@ print(deal.varighet)
 # -----------------------------------------------------------
 #                     Oppgave h
 # -----------------------------------------------------------
-with open('readme.txt', 'w') as Avtaler:
-    Avtaler.write('Create a new text file!')
+
+avtaler = []
+avtaler.append(avtale)
+avtaler.append(a2)
+avtaler.append(deal)
+    
+json_object = json.dumps({'avtaler': avtaler}, indent=4)
+
+with open("group.json", "w") as outfile:
+    outfile.open(json_object)
+    
+    
     
 # -----------------------------------------------------------
 #                     Oppgave i
 # -----------------------------------------------------------
-with open('readme.txt', 'r') as Avtaler:
-    [print(linjer) for linjer in Avtaler.readlines()]
-    Avtaler.close()
+
 # -----------------------------------------------------------
 #                     Oppgave j
 # -----------------------------------------------------------
