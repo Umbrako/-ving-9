@@ -87,7 +87,7 @@ avtaler.append(deal)
     
 json_object = json.dumps({'avtaler': avtaler}, indent=4)
 
-with open("group.json", "w") as outfile:
+with open("test.json", "w") as outfile:
     outfile.open(json_object)
     
     
@@ -95,14 +95,17 @@ with open("group.json", "w") as outfile:
 # -----------------------------------------------------------
 #                     Oppgave i
 # -----------------------------------------------------------
-#
+with open("test.json", "r") as outfile:
+    print(outfile.read())
+    
+    
 #
 #
 #
 # -----------------------------------------------------------
 #                     Oppgave j
 # -----------------------------------------------------------
-# 
+def alle avta
 # 
 # 
 # -----------------------------------------------------------
