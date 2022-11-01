@@ -49,7 +49,8 @@ print(a2.sted)
 print(a2.start)
 print(a2.varighet,"timer")
 
-{}
+print()
+
         
 # -----------------------------------------------------------
 #                     Oppgave g
