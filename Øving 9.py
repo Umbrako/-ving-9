@@ -12,13 +12,7 @@ class Avtale:
     
 now = datetime.now()
 dag = now.strftime("%H:%M:%S:")
-print((datetime.fromisoformat("2000-09-20 12:00:00")))
-
-
-
-
-
-
+print(datetime.fromisoformat("2000-09-20 12:00:00"))
 
  
 # -----------------------------------------------------------
@@ -35,9 +29,8 @@ class Avtale1:
 
 avtale = Avtale1("Kvernevik", "Hafrsfjord")
 
-print(avtale.tittel)    
-
-
+print(avtale.tittel)   
+print(avtale.sted) 
 
 
 # -----------------------------------------------------------
@@ -55,18 +48,29 @@ print(a2.tittel)
 print(a2.sted)
 print(a2.start)
 print(a2.varighet,"timer")
-  
+
+{}
         
-
-
-
- 
 # -----------------------------------------------------------
 #                     Oppgave g
 # -----------------------------------------------------------
-# 
-# 
-# 
+class Avtale3:
+  def __init__(self, tittel, sted, start, varighet):
+    self.tittel = tittel
+    self.sted = sted
+    self.start = start
+    self.varighet = varighet
+    
+    def __str__(self):
+        return f"tittel={self.tittel}, sted ={self.sted}, start={self.start}, varighet ={self.varighet}"
+ 
+deal = Avtale3("Bankkort","DNB Arena",datetime.fromisoformat("2022-01-11 12:00:00"), "2 timer")
+print(deal.tittel)
+print(deal.sted)
+print(deal.start)
+print(deal.varighet)
+
+
 # -----------------------------------------------------------
 #                     Oppgave h
 # -----------------------------------------------------------
