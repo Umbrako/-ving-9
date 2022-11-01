@@ -38,17 +38,25 @@ avtale = Avtale("Kvernevik", "Hafrsfjord")
 print(avtale.tittel)    
 
 
-# a1 = Avtale("Nokasranet", "Nokas", 1200, 2)
-# print(a1.tittel)
-# print(a1.start)
-# print(a1.varighet) 
+
 
 # -----------------------------------------------------------
 #                     Oppgave f
 # -----------------------------------------------------------
+class Avtale2:
+  def __init__(self, tittel, sted, start, varighet):
+    self.tittel = tittel
+    self.sted = sted
+    self.start = start
+    self.varighet = varighet
+
+a2 = Avtale2(input("Tittel:"), input("Sted:"), datetime.fromisoformat(input("Start:")), input("Varighet:"))
+print(a2.tittel) 
+print(a2.sted)
+print(a2.start)
+print(a2.varighet,"timer")
   
         
-a2 = Avtale1(input("Tittel:"), input("Sted:"), datetime.fromisoformat(input("Start:")), input("Varighet:"))
 
 
 
