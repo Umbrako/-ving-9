@@ -12,8 +12,8 @@ class Avtale1:
     
 now = datetime.now()
 dag = now.strftime("%H:%M:%S:")
-print(type(datetime.fromisoformat("2000-09-20 12:00:00")))
-print("Start", dag)
+print((datetime.fromisoformat("2000-09-20 12:00:00")))
+
 
 
 
@@ -46,8 +46,11 @@ print(avtale.tittel)
 # -----------------------------------------------------------
 #                     Oppgave f
 # -----------------------------------------------------------
-a2 = Avtale1(input("Tittel:"), input("Sted:"), input("Start:"), input("Varighet:"))
-print(a2.tittel, a2.sted, a2.start, a2.varighet) 
+  
+        
+a2 = Avtale1(input("Tittel:"), input("Sted:"), datetime.fromisoformat(input("Start:")), input("Varighet:"))
+
+
 
  
 # -----------------------------------------------------------
