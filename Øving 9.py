@@ -85,8 +85,7 @@ with open('readme.txt', 'w') as Avtaler:
 #                     Oppgave i
 # -----------------------------------------------------------
 with open('readme.txt', 'r') as Avtaler:
-    linjer = Avtaler.readlines()
-    print(linjer)
+    [print(linjer) for linjer in Avtaler.readlines()]
     Avtaler.close()
 # -----------------------------------------------------------
 #                     Oppgave j
