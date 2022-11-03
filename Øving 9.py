@@ -12,6 +12,9 @@ class Avtale:
     self.start = start
     self.varighet = varighet
     
+    def __str__(self, tittel, sted, start, varighet):
+          return f"tittel={self.tittel}, sted ={self.sted}, start={self.start}, varighet={varighet}"
+    
   
     
 now = datetime.now()
@@ -24,8 +27,6 @@ print(datetime.fromisoformat("2000-09-20 12:00:00"))
 
 
 
-def __str__(self, tittel, sted, start, varighet):
-      return f"tittel={self.tittel}, sted ={self.sted}, start={self.start}, varighet={varighet}"
 
 avtale = Avtale("Kvernevik", "Hafrsfjord", "start", "varighet")
 
