@@ -22,10 +22,25 @@ print(datetime.fromisoformat("2000-09-20 12:00:00"))
 #                     Oppgave e
 # -----------------------------------------------------------
 
+<<<<<<< HEAD
+=======
+
+<<<<<<< HEAD
+def __str__(self, tittel, sted, start, varighet):
+      return f"tittel={self.tittel}, sted ={self.sted}, start={self.start}, varighet={varighet}"
+
+avtale = Avtale("Kvernevik", "Hafrsfjord", "start", "varighet")
+=======
+>>>>>>> 91e555336b502467eb63113538cc208c740cd314
 def __str__(self):
     avtale1 = Avtale("Kvernevik", "Hafrsfjord")
     return avtale1
 
+<<<<<<< HEAD
+=======
+avtale1 = Avtale("Kvernevik", "Hafrsfjord")
+>>>>>>> 586fc67604d104d386a230f25581f7a01df8ff49
+>>>>>>> 91e555336b502467eb63113538cc208c740cd314
 
 
 
@@ -135,9 +150,9 @@ for avtale in avtaler:
 # -----------------------------------------------------------
 #                     Oppgave l
 # -----------------------------------------------------------
-# 
-# 
-# 
+
+
+
 # -----------------------------------------------------------
 #                     Oppgave m
 # -----------------------------------------------------------
