@@ -49,13 +49,13 @@ def nyAvtale(self, tittel, sted, start, varighet):
     
     
 
-print()
-print("Avtale 2")
-print(nyAvtale.tittel) 
-print(nyAvtale.sted)
-print(nyAvtale.start)
-print(nyAvtale.varighet,"timer")
-print()
+    print()
+    print("Avtale 2")
+    print(nyAvtale.tittel) 
+    print(nyAvtale.sted)
+    print(nyAvtale.start)
+    print(nyAvtale.varighet,"timer")
+    print()
 
         
 # -----------------------------------------------------------
@@ -80,7 +80,6 @@ print(deal.varighet)
 
 avtaler = []
 avtaler.append(Avtale)
-avtaler.append(a2)
 avtaler.append(deal)
     
 json_object = json.dumps({'avtaler': avtaler}, indent=4)
@@ -160,18 +159,7 @@ def meny():
         [5] Avslutt
 
         ''')
-        if operation == 1
-            print("")
-
-        elif operation == 2
-            print()
-
-        elif operation == 3
-
-        elif operation == 4
-
-        elif operation == 5
-            break
+   
 # -----------------------------------------------------------
 #                     Oppgave m
 # -----------------------------------------------------------
