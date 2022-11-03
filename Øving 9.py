@@ -21,8 +21,8 @@ print(datetime.fromisoformat("2000-09-20 12:00:00"))
 # -----------------------------------------------------------
 
 
- def __str__(self):
-        return f"tittel={self.tittel}, sted ={self.sted}"
+def __str__(self):
+  return f"tittel={self.tittel}, sted ={self.sted}"
 
 avtale = Avtale("Kvernevik", "Hafrsfjord")
 
@@ -50,7 +50,7 @@ print()
 # -----------------------------------------------------------
 
     
-    def __str__(self):
+def __str__(self):
         return f"tittel={self.tittel}, sted ={self.sted}, start={self.start}, varighet ={self.varighet}"
  
 deal = Banken("Bankkort","DNB Arena",datetime.fromisoformat("2022-01-11 12:00:00"), "2 timer")
@@ -98,7 +98,7 @@ def alle_avtaler_paa_dato(avtaler, dato):
 #                     Oppgave k
 # -----------------------------------------------------------
 
-  def get_tittel(self):
+def get_tittel(self):
     return self.tittel
 
 
