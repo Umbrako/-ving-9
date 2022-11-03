@@ -146,9 +146,31 @@ for avtale in avtaler:
 # -----------------------------------------------------------
 #                     Oppgave l
 # -----------------------------------------------------------
+mylist = []
+def meny():
 
+    while True:
+        operation = input('''
+        Select operation:
+        [1] Lese inn avtaler fra fil
+        [2] Skrive avtalene til fil
+        [3] Skrive inn ny avtale
+        [4] Skrive ut alle avtalene
+        [5] Avslutt
 
+        ''')
+        if operation == 1
+            print("")
 
+        elif operation == 2
+            print()
+
+        elif operation == 3
+
+        elif operation == 4
+
+        elif operation == 5
+            break
 # -----------------------------------------------------------
 #                     Oppgave m
 # -----------------------------------------------------------
