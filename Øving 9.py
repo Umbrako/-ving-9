@@ -21,10 +21,10 @@ print(datetime.fromisoformat("2000-09-20 12:00:00"))
 # -----------------------------------------------------------
 
 
-def __str__(self):
-  return f"tittel={self.tittel}, sted ={self.sted}"
+def __str__(self, tittel, sted, start, varighet):
+      return f"tittel={self.tittel}, sted ={self.sted}, start={self.start}, varighet={varighet}"
 
-avtale = Avtale("Kvernevik", "Hafrsfjord")
+avtale = Avtale("Kvernevik", "Hafrsfjord", "start", "varighet")
 
 print(avtale.tittel)   
 print(avtale.sted) 
@@ -133,9 +133,9 @@ for avtale in avtaler:
 # -----------------------------------------------------------
 #                     Oppgave l
 # -----------------------------------------------------------
-# 
-# 
-# 
+
+
+
 # -----------------------------------------------------------
 #                     Oppgave m
 # -----------------------------------------------------------
