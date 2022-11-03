@@ -28,30 +28,6 @@ def __str__(self, tittel, sted, start, varighet):
       return f"tittel={self.tittel}, sted ={self.sted}, start={self.start}, varighet={varighet}"
 
 avtale = Avtale("Kvernevik", "Hafrsfjord", "start", "varighet")
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 91e555336b502467eb63113538cc208c740cd314
-def __str__(self):
-    avtale1 = Avtale("Kvernevik", "Hafrsfjord")
-    return avtale1
-
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-avtale1 = Avtale("Kvernevik", "Hafrsfjord")
->>>>>>> 586fc67604d104d386a230f25581f7a01df8ff49
-=======
-avtale1 = __str__("Kvernevik", "Hafrsfjord")
->>>>>>> Stashed changes
-=======
-<<<<<<< HEAD
-=======
-avtale1 = Avtale("Kvernevik", "Hafrsfjord")
->>>>>>> 586fc67604d104d386a230f25581f7a01df8ff49
->>>>>>> 91e555336b502467eb63113538cc208c740cd314
->>>>>>> 4b6114a6584817a688243da7bc25dd0cf1a9f6d5
->>>>>>> c3967190d77091a6b68fdac97cdedbafcbd94cdd
 
 
 
