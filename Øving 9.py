@@ -50,7 +50,7 @@ print()
 # -----------------------------------------------------------
 
     
-def __str__(self):
+def Banken(self):
         return f"tittel={self.tittel}, sted ={self.sted}, start={self.start}, varighet ={self.varighet}"
  
 deal = Banken("Bankkort","DNB Arena",datetime.fromisoformat("2022-01-11 12:00:00"), "2 timer")
