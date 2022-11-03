@@ -1,0 +1,14 @@
+[
+    {
+        "tittel": "tai",
+        "sted": "hei",
+        "start": "2000-12-20 12:30:40",
+        "varighet": 30
+    },
+    {
+        "tittel": "test",
+        "sted": "test2",
+        "start": "2004-01-17 01:02:02",
+        "varighet": 30
+    }
+]
