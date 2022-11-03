@@ -44,17 +44,17 @@ def nyAvtale(self, tittel, sted, start, varighet):
     self.sted = input("Sted:")
     self.start = datetime.fromisoformat(input("Start (ÅÅÅÅ-MM-DD HH:MM:SS):"))
     self.varighet =input("Varighet: ")
-    f
+    return f"tittel={self.tittel}, sted ={self.sted}, start={self.start}, varighet={varighet}"
  
     
     
 
 print()
 print("Avtale 2")
-print(a2.tittel) 
-print(a2.sted)
-print(a2.start)
-print(a2.varighet,"timer")
+print(nyAvtale.tittel) 
+print(nyAvtale.sted)
+print(nyAvtale.start)
+print(nyAvtale.varighet,"timer")
 print()
 
         
