@@ -42,11 +42,12 @@ print(avtale.sted)
 def nyAvtale(self, tittel, sted, start, varighet):
     self.tittel = input("Tittel:")
     self.sted = input("Sted:")
-    self.start = datetime.fromisoformat(input("Start (ÅÅÅÅ-MM-DD HH:MM:SS):")
- 
-    return
+    self.start = datetime.fromisoformat(input("Start (ÅÅÅÅ-MM-DD HH:MM:SS):"))
+    self.varighet =input("Varighet: ")
     
-a2 = Avtale(input("Tittel:"), input("Sted:"), datetime.fromisoformat(input("Start (ÅÅÅÅ-MM-DD HH:MM:SS):")), input("Varighet:"))
+ 
+    
+    
 
 print()
 print("Avtale 2")
