@@ -4,7 +4,7 @@
 import json 
 from datetime import datetime
 
-class Avtale:
+class Avtale5:
   def __init__(self, tittel, sted, start, varighet):
     self.tittel = tittel
     self.sted = sted
@@ -117,7 +117,7 @@ def alle_avtaler_paa_dato(avtaler, dato):
 # -----------------------------------------------------------
 #                     Oppgave k
 # -----------------------------------------------------------
-class Avtale5:
+class Avtale:
   def __init__(self, tittel, sted, start, varighet): 
     self.tittel = tittel
     self.sted = sted
