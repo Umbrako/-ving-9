@@ -12,6 +12,8 @@ class Avtale:
     self.start = start
     self.varighet = varighet
     
+  
+    
 now = datetime.now()
 dag = now.strftime("%H:%M:%S:")
 print(datetime.fromisoformat("2000-09-20 12:00:00"))
@@ -20,14 +22,15 @@ print(datetime.fromisoformat("2000-09-20 12:00:00"))
 #                     Oppgave e
 # -----------------------------------------------------------
 
-
 def __str__(self):
-        return f"tittel={self.tittel}, sted ={self.sted}"
+    avtale1 = Avtale("Kvernevik", "Hafrsfjord")
+    return avtale1
 
-avtale1 = Avtale("Kvernevik", "Hafrsfjord")
 
-print(avtale1.tittel)   
-print(avtale1.sted) 
+
+
+print(__str__.tittel)   
+print(__str__.sted) 
 
 
 # -----------------------------------------------------------
@@ -41,7 +44,6 @@ print(a2.tittel)
 print(a2.sted)
 print(a2.start)
 print(a2.varighet,"timer")
-
 print()
 
         
