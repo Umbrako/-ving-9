@@ -161,7 +161,18 @@ def meny():
         [5] Avslutt
 
         ''')
-        
+        if operation == 1
+            print("")
+
+        elif operation == 2
+            print()
+
+        elif operation == 3
+
+        elif operation == 4
+
+        elif operation == 5
+            break
 # -----------------------------------------------------------
 #                     Oppgave m
 # -----------------------------------------------------------
