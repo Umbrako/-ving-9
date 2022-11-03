@@ -30,8 +30,12 @@ avtale = Avtale("Kvernevik", "Hafrsfjord", "start", "varighet")
 def __str__(self):
         return f"tittel={self.tittel}, sted ={self.sted}"
 
+<<<<<<< Updated upstream
 avtale1 = Avtale("Kvernevik", "Hafrsfjord")
 >>>>>>> 586fc67604d104d386a230f25581f7a01df8ff49
+=======
+avtale1 = __str__("Kvernevik", "Hafrsfjord")
+>>>>>>> Stashed changes
 
 print(avtale1.tittel)   
 print(avtale1.sted) 
