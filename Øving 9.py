@@ -25,11 +25,11 @@ print(datetime.fromisoformat("2000-09-20 12:00:00"))
 <<<<<<< HEAD
 =======
 
-<<<<<<< HEAD
 def __str__(self, tittel, sted, start, varighet):
       return f"tittel={self.tittel}, sted ={self.sted}, start={self.start}, varighet={varighet}"
 
 avtale = Avtale("Kvernevik", "Hafrsfjord", "start", "varighet")
+<<<<<<< HEAD
 =======
 >>>>>>> 91e555336b502467eb63113538cc208c740cd314
 def __str__(self):
@@ -46,6 +46,11 @@ avtale1 = Avtale("Kvernevik", "Hafrsfjord")
 
 print(__str__.tittel)   
 print(__str__.sted) 
+=======
+
+print(avtale.tittel)   
+print(avtale.sted) 
+>>>>>>> ee394944131fffe16dc37d4ecdce0a7bc77d5094
 
 
 # -----------------------------------------------------------
