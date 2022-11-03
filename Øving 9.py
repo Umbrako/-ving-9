@@ -39,8 +39,15 @@ print(avtale.sted)
 # -----------------------------------------------------------
 #                     Oppgave f
 # -----------------------------------------------------------
-
+def nyAvtale(self, tittel, sted, start, varighet):
+    self.tittel = input("Tittel:")
+    self.sted = input("Sted:")
+    self.start = datetime.fromisoformat(input("Start (ÅÅÅÅ-MM-DD HH:MM:SS):")
+ 
+    return
+    
 a2 = Avtale(input("Tittel:"), input("Sted:"), datetime.fromisoformat(input("Start (ÅÅÅÅ-MM-DD HH:MM:SS):")), input("Varighet:"))
+
 print()
 print("Avtale 2")
 print(a2.tittel) 
