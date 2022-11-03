@@ -44,7 +44,7 @@ def nyAvtale(self, tittel, sted, start, varighet):
     self.sted = input("Sted:")
     self.start = datetime.fromisoformat(input("Start (ÅÅÅÅ-MM-DD HH:MM:SS):"))
     self.varighet =input("Varighet: ")
-    
+    f
  
     
     
