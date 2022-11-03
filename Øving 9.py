@@ -22,12 +22,12 @@ print(datetime.fromisoformat("2000-09-20 12:00:00"))
 
 
 def __str__(self):
-  return f"tittel={self.tittel}, sted ={self.sted}"
+        return f"tittel={self.tittel}, sted ={self.sted}"
 
-avtale = Avtale("Kvernevik", "Hafrsfjord")
+avtale1 = Avtale("Kvernevik", "Hafrsfjord")
 
-print(avtale.tittel)   
-print(avtale.sted) 
+print(avtale1.tittel)   
+print(avtale1.sted) 
 
 
 # -----------------------------------------------------------
@@ -66,7 +66,7 @@ print(deal.varighet)
 # -----------------------------------------------------------
 
 avtaler = []
-avtaler.append(avtale)
+avtaler.append(Avtale)
 avtaler.append(a2)
 avtaler.append(deal)
     
