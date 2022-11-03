@@ -12,6 +12,8 @@ class Avtale:
     self.start = start
     self.varighet = varighet
     
+  
+    
 now = datetime.now()
 dag = now.strftime("%H:%M:%S:")
 print(datetime.fromisoformat("2000-09-20 12:00:00"))
@@ -20,25 +22,44 @@ print(datetime.fromisoformat("2000-09-20 12:00:00"))
 #                     Oppgave e
 # -----------------------------------------------------------
 
-
 <<<<<<< HEAD
+=======
+
 def __str__(self, tittel, sted, start, varighet):
       return f"tittel={self.tittel}, sted ={self.sted}, start={self.start}, varighet={varighet}"
 
 avtale = Avtale("Kvernevik", "Hafrsfjord", "start", "varighet")
+<<<<<<< HEAD
 =======
+>>>>>>> 91e555336b502467eb63113538cc208c740cd314
 def __str__(self):
-        return f"tittel={self.tittel}, sted ={self.sted}"
+    avtale1 = Avtale("Kvernevik", "Hafrsfjord")
+    return avtale1
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 avtale1 = Avtale("Kvernevik", "Hafrsfjord")
 >>>>>>> 586fc67604d104d386a230f25581f7a01df8ff49
 =======
 avtale1 = __str__("Kvernevik", "Hafrsfjord")
 >>>>>>> Stashed changes
+=======
+<<<<<<< HEAD
+=======
+avtale1 = Avtale("Kvernevik", "Hafrsfjord")
+>>>>>>> 586fc67604d104d386a230f25581f7a01df8ff49
+>>>>>>> 91e555336b502467eb63113538cc208c740cd314
+>>>>>>> 4b6114a6584817a688243da7bc25dd0cf1a9f6d5
 
-print(avtale1.tittel)   
-print(avtale1.sted) 
+
+
+print(__str__.tittel)   
+print(__str__.sted) 
+=======
+
+print(avtale.tittel)   
+print(avtale.sted) 
+>>>>>>> ee394944131fffe16dc37d4ecdce0a7bc77d5094
 
 
 # -----------------------------------------------------------
@@ -52,7 +73,6 @@ print(a2.tittel)
 print(a2.sted)
 print(a2.start)
 print(a2.varighet,"timer")
-
 print()
 
         
