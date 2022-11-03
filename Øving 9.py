@@ -145,8 +145,9 @@ for avtale in avtaler:
 # -----------------------------------------------------------
 #                     Oppgave l
 # -----------------------------------------------------------
+mylist = []
 def meny():
-    mylist = []
+
     while True:
         operation = input('''
         Select operation:
