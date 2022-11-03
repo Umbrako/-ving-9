@@ -63,10 +63,11 @@ def nyAvtale(self, tittel, sted, start, varighet):
 # -----------------------------------------------------------
 
     
-def Banken(self):
+def Banken(self, tittel, sted, start, varighet):
+        
         return f"tittel={self.tittel}, sted ={self.sted}, start={self.start}, varighet ={self.varighet}"
  
-deal = Banken("Bankkort","DNB Arena",datetime.fromisoformat("2022-01-11 12:00:00"), "2 timer")
+deal = Avtale("Bankkort","DNB Arena",datetime.fromisoformat("2022-01-11 12:00:00"), "2 timer")
 print("Banken")
 print(deal.tittel)
 print(deal.sted)
@@ -125,7 +126,7 @@ liste = [avtale1, avtale2, avtale3]
 
 def funksjon(liste, streng):
     returnList = []
-    for avtale in liste:
+    for Avtale in liste:
         tittelValue = avtale.get_tittel()
         if (tittelValue.find(streng) != -1):
             returnList.append(avtale)
@@ -159,7 +160,7 @@ def meny():
         [5] Avslutt
 
         ''')
-   
+        
 # -----------------------------------------------------------
 #                     Oppgave m
 # -----------------------------------------------------------
