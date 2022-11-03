@@ -49,13 +49,13 @@ def nyAvtale(self, tittel, sted, start, varighet):
     
     
 
-    print()
-    print("Avtale 2")
-    print(nyAvtale.tittel) 
-    print(nyAvtale.sted)
-    print(nyAvtale.start)
-    print(nyAvtale.varighet,"timer")
-    print()
+print()
+print("Avtale 2")
+print(nyAvtale.tittel) 
+print(nyAvtale.sted)
+print(nyAvtale.start)
+print(nyAvtale.varighet,"timer")
+print()
 
         
 # -----------------------------------------------------------
@@ -68,6 +68,7 @@ def Banken(self, tittel, sted, start, varighet):
         return f"tittel={self.tittel}, sted ={self.sted}, start={self.start}, varighet ={self.varighet}"
  
 deal = Avtale("Bankkort","DNB Arena",datetime.fromisoformat("2022-01-11 12:00:00"), "2 timer")
+print()
 print("Banken")
 print(deal.tittel)
 print(deal.sted)
