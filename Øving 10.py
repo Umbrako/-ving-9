@@ -292,6 +292,9 @@ def lag_ny_kategori() -> Optional[kategori]:
 
     return kategori(ID, navn, prioritet_int)
 
+def skriv_ut_kategori(kategori: List[kategori], overskrift=None)
+    
+
 
 
 
