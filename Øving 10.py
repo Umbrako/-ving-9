@@ -290,7 +290,7 @@ def lag_ny_kategori() -> Optional[kategori]:
         prioritet_int = int(prioritet)
     except ValueError:
         print("Du må skrive inn et gyldig tall for prioritet!")
-    return None
+        return None
 
     return kategori(ID, navn, prioritet_int)
 
@@ -313,29 +313,29 @@ def skriv_ut_kategori(kategori: List[kategori], overskrift1=None) -> None:
         print(f"#{i} {kategori[i].tittel}")
         
 class sted:
-    def __init__(self,ID2: str, Navn2: str, prioritet2: str):
-        self.ID2 = ID2
-        self.Navn2= Navn2
-        self.prioritet2 = prioritet2
+    def __init__(self,ID: str, navn: str, prioritet: str):
+        self.ID = ID
+        self.navn= navn
+        self.prioritet = prioritet
 
     def __str__(self):
-        return  f"ID2 ={self.ID2}, Navn2={self.Navn2}, prioritet2={self.prioritet2}"
+        return  f"ID ={self.ID}, navn={self.navn}, prioritet={self.prioritet}"
 
 def lag_nytt_sted() -> Optional[sted]:
     
-    ID2 = input("Skriv inn gateadresse #")
-    Navn2 = input("Skriv inn et poststed #")
-    prioritet1 = input("Skriv inn en postnummer")
+    ID = input("Skriv inn gateadresse #")
+    navn = input("Skriv inn et poststed #")
+    prioritet = input("Skriv inn en postnummer")
 
 
     
     try:
-        prioritet1_int = int(prioritet1)
+        prioritet_int = int(prioritet)
     except ValueError:
         print("Du må skrive inn ett positivt tall!")
-    return None
+        return None
 
-    return sted(ID2, Navn2, prioritet1_int)
+    return sted(ID, navn, prioritet_int)
 
 def skrive_sted_til_fil(sted: List[sted]) -> None:
     "Skriver liste med steder til filen"
@@ -350,8 +350,8 @@ def skrive_ut_sted(sted: List[sted], overskrift2=None) -> None:
     if overskrift2:
         print(overskrift2)
         
-    for i in range(len(kategori)):
-        print(f"{i} {kategori[i].tittel}")
+    for i in range(len(sted)):
+        print(f"{i} {sted[i].tittel}")
                     
     
 
