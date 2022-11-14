@@ -267,3 +267,19 @@ Velg en operasjon # """)
 
 if __name__ == '__main__':
     kjor_meny_system()
+    
+###### ØVING 10 ######    
+class kategori:
+    def __init__(self, ID: str, navn: str, prioritet: str):
+        self.ID = ID
+        self.navn = navn
+        self.prioritet = prioritet
+        
+    
+
+
+
+
+
+
+
