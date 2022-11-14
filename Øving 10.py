@@ -276,7 +276,17 @@ class kategori:
         self.prioritet = prioritet
         
     
+def lag_ny_kategori() -> Optional[kategori]:
+  
 
+    ID = input("Skriv inn  ID # ")
+    navn = input("Skriv inn et Navn # ")
+    prioritet = input("Skriv inn en prioritet # ")
+
+
+
+
+    return kategori(ID, navn, prioritet)
 
 
 
