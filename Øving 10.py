@@ -284,9 +284,13 @@ def lag_ny_kategori() -> Optional[kategori]:
     prioritet = input("Skriv inn en prioritet # ")
 
 
+    try:
+        prioritet_int = int(prioritet)
+    except ValueError:
+        print("Du må skrive inn et gyldig tall for prioritet!")
+    return None
 
-
-    return kategori(ID, navn, prioritet)
+    return kategori(ID, navn, prioritet_int)
 
 
 
