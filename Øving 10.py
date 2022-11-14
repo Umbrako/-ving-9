@@ -269,7 +269,7 @@ if __name__ == '__main__':
     kjor_meny_system()
     
 ###### ØVING 10 ######    
-class kategori:
+class Kategori:
     def __init__(self, ID: str, navn: str, prioritet: str):
         self.ID = ID
         self.navn = navn
@@ -278,7 +278,7 @@ class kategori:
     #Legg inn __STR__ (SE  LINJE 322!))
         
     
-def lag_ny_kategori() -> Optional[kategori]:
+def lag_ny_kategori() -> Optional[Kategori]:
   
 
     ID = input("Skriv inn  ID # ")
@@ -292,16 +292,16 @@ def lag_ny_kategori() -> Optional[kategori]:
         print("Du må skrive inn et gyldig tall for prioritet!")
         return None
 
-    return kategori(ID, navn, prioritet_int)
+    return Kategori(ID, navn, prioritet_int)
 
-def skrive_kategori_til_fil(kategori: List[kategori]) -> None:
+def skrive_kategori_til_fil(Kategori: List[Kategori]) -> None:
     "Skriver liste med kategorier til fil"
-    json_object = json.dumps(kategori, default=datetime_option,
+    json_object = json.dumps(Kategori, default=datetime_option,
                              indent=4, seperators=(',',':'))
     with open("kategori_lister.json", "w") as json_fil:
         json_fil.write(json_object)
 
-def skriv_ut_kategori(kategori: List[kategori], overskrift1=None) -> None:
+def skriv_ut_kategori(Kategori: List[Kategori], overskrift1=None) -> None:
     "Skriver ut en liste med kategorier til skjermen"
     
     #Pga. Overskrift1 er frivillig så må vi se om overskriften er oppgitt.
@@ -309,10 +309,10 @@ def skriv_ut_kategori(kategori: List[kategori], overskrift1=None) -> None:
         print(overskrift1)
         
     #loop gjennom listen og skrive ut indeks + tittel til avtale
-    for i in range(len(kategori)):
-        print(f"#{i} {kategori[i].tittel}")
+    for i in range(len(Kategori)):
+        print(f"#{i} {Kategori[i].tittel}")
         
-class sted:
+class Sted:
     def __init__(self,ID: str, navn: str, prioritet: str):
         self.ID = ID
         self.navn= navn
@@ -321,7 +321,7 @@ class sted:
     def __str__(self):
         return  f"ID ={self.ID}, navn={self.navn}, prioritet={self.prioritet}"
 
-def lag_nytt_sted() -> Optional[sted]:
+def lag_nytt_sted() -> Optional[Sted]:
     
     ID = input("Skriv inn gateadresse #")
     navn = input("Skriv inn et poststed #")
@@ -335,22 +335,22 @@ def lag_nytt_sted() -> Optional[sted]:
         print("Du må skrive inn ett positivt tall!")
         return None
 
-    return sted(ID, navn, prioritet_int)
+    return Sted(ID, navn, prioritet_int)
 
-def skrive_sted_til_fil(sted: List[sted]) -> None:
+def skrive_sted_til_fil(sted: List[Sted]) -> None:
     "Skriver liste med steder til filen"
     json_object = json.dumps(sted, default=datetime_option,
                              indent=4, seperators=(',',':'))
     with open("sted_lister.json", "w") as json_fil:
         json_fil.write(json_object)
     
-def skrive_ut_sted(sted: List[sted], overskrift2=None) -> None:
+def skrive_ut_sted(sted: List[Sted], overskrift2=None) -> None:
     "skriver ut liste med steder til skjermen"
     
     if overskrift2:
         print(overskrift2)
         
-    for i in range(len(sted)):
+    for i in range(len(Sted)):
         print(f"{i} {sted[i].tittel}")
                     
     
