@@ -10,5 +10,11 @@
         "sted": "test2",
         "start": "2004-01-17 01:02:02",
         "varighet": 30
+    },
+    {
+        "tittel": "Hei",
+        "sted": "Hei",
+        "start": "2001-10-10 12:00:00",
+        "varighet": 5
     }
 ]
