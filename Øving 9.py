@@ -42,7 +42,7 @@ print(avtale.sted)
 def nyAvtale(self, tittel, sted, start, varighet):
     self.tittel = input("Tittel:")
     self.sted = input("Sted:")
-    self.start = datetime.fromisoformat(input("Start (ÅÅÅÅ-MM-DD HH:MM:SS):"))
+    self.start = datetime.fromisoformat(b)
     self.varighet =input("Varighet: ")
     return f"tittel={self.tittel}, sted ={self.sted}, start={self.start}, varighet={varighet}"
  
@@ -57,7 +57,7 @@ print(nyAvtale.start)
 print(nyAvtale.varighet,"timer")
 print()
 
-        
+         
 # -----------------------------------------------------------
 #                     Oppgave g
 # -----------------------------------------------------------
@@ -172,6 +172,7 @@ def meny():
 
         elif operation == 5
             break
+        
 # -----------------------------------------------------------
 #                     Oppgave m
 # -----------------------------------------------------------
