@@ -274,6 +274,8 @@ class kategori:
         self.ID = ID
         self.navn = navn
         self.prioritet = prioritet
+    
+    #Legg inn __STR__ (SE  LINJE 322!))
         
     
 def lag_ny_kategori() -> Optional[kategori]:
@@ -292,7 +294,73 @@ def lag_ny_kategori() -> Optional[kategori]:
 
     return kategori(ID, navn, prioritet_int)
 
-def skriv_ut_kategori(kategori: List[kategori], overskrift=None)
+def skrive_kategori_til_fil(kategori: List[kategori]) -> None:
+    "Skriver liste med kategorier til fil"
+    json_object = json.dumps(kategori, default=datetime_option,
+                             indent=4, seperators=(',',':'))
+    with open("kategori_lister.json", "w") as json_fil:
+        json_fil.write(json_object)
+
+def skriv_ut_kategori(kategori: List[kategori], overskrift1=None) -> None:
+    "Skriver ut en liste med kategorier til skjermen"
+    
+    #Pga. Overskrift1 er frivillig så må vi se om overskriften er oppgitt.
+    if overskrift1:
+        print(overskrift1)
+        
+    #loop gjennom listen og skrive ut indeks + tittel til avtale
+    for i in range(len(kategori)):
+        print(f"#{i} {kategori[i].tittel}")
+        
+class sted:
+    def __init__(self,ID2: str, Navn2: str, prioritet2: str):
+        self.ID2 = ID2
+        self.Navn2= Navn2
+        self.prioritet2 = prioritet2
+
+    def __str__(self):
+        return  f"ID2 ={self.ID2}, Navn2={self.Navn2}, prioritet2={self.prioritet2}"
+
+def lag_nytt_sted() -> Optional[sted]:
+    
+    ID2 = input("Skriv inn gateadresse #")
+    Navn2 = input("Skriv inn et poststed #")
+    prioritet1 = input("Skriv inn en postnummer")
+
+
+    
+    try:
+        prioritet1_int = int(prioritet1)
+    except ValueError:
+        print("Du må skrive inn ett positivt tall!")
+    return None
+
+    return sted(ID2, Navn2, prioritet1_int)
+
+def skrive_sted_til_fil(sted: List[sted]) -> None:
+    "Skriver liste med steder til filen"
+    json_object = json.dumps(sted, default=datetime_option,
+                             indent=4, seperators=(',',':'))
+    with open("sted_lister.json", "w") as json_fil:
+        json_fil.write(json_object)
+    
+def skrive_ut_sted(sted: List[sted], overskrift2=None) -> None:
+    "skriver ut liste med steder til skjermen"
+    
+    if overskrift2:
+        print(overskrift2)
+        
+    for i in range(len(kategori)):
+        print(f"{i} {kategori[i].tittel}")
+                    
+    
+
+
+
+    
+    
+
+
     
 
 
