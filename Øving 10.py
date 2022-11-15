@@ -43,7 +43,7 @@ def lag_ny_avtale() -> Optional[Avtale]:
     sted = input("Skriv inn avtale sted # ")
     start = input("Skriv inn avtale start 'ÅÅÅÅ-MM-DD HH:MM:SS' # ")
     varighet = input("Skriv inn avtale varighet (minutter) # ")
-    kategori = input("Skriv inn Kategori")
+ 
 
     # Sjekk om vi kan konvertere start til et datetime objekt
     try:
@@ -59,7 +59,7 @@ def lag_ny_avtale() -> Optional[Avtale]:
         print("Du må skrive inn et gyldig tall for varighet!")
         return None
 
-    return Avtale(tittel, sted, start_tid, varighet_int, kategori)
+    return Avtale(tittel, sted, start_tid, varighet_int)
 
 
 # -----------------------------------------------------------
