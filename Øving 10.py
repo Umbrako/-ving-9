@@ -274,6 +274,12 @@ class Kategori:
         self.ID = ID
         self.navn = navn
         self.prioritet = prioritet
+        
+        
+        
+    def __str__(self):
+     return f"ID={self.ID}, navn={self.navn}, prioritet={self.prioritet}"
+
     
     #Legg inn __STR__ (SE  LINJE 322!))
         
