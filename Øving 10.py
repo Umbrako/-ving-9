@@ -8,15 +8,27 @@ from typing import List, Optional
 
 
 class Avtale:
-    def __init__(self, tittel: str, sted: str, start: datetime, varighet: int):
+    def __init__(self, tittel: str, sted: str, start: datetime, varighet: int, Kategori):
         self.tittel = tittel
         self.sted = sted
         self.start = start
         self.varighet = varighet
+        self.Kategori = self.Kategori()
+        
+        class Kategori:
+            def __init__(self, ID: str, navn: str, prioritet: str):
+                self.ID = ID
+                self.navn = navn
+                self.prioritet = prioritet
+                
+                
+                
+            def __str__(self):
+             return f"ID={self.ID}, navn={self.navn}, prioritet={self.prioritet}"
 
     # Oppgave e
     def __str__(self):
-        return f"tittel={self.tittel}, sted={self.sted}, start={self.start}, varighet={self.varighet}"
+        return f"tittel={self.tittel}, sted={self.sted}, start={self.start}, varighet={self.varighet},"
 
 
 # -----------------------------------------------------------
@@ -31,6 +43,7 @@ def lag_ny_avtale() -> Optional[Avtale]:
     sted = input("Skriv inn avtale sted # ")
     start = input("Skriv inn avtale start 'ÅÅÅÅ-MM-DD HH:MM:SS' # ")
     varighet = input("Skriv inn avtale varighet (minutter) # ")
+    kategori = input("Skriv inn Kategori")
 
     # Sjekk om vi kan konvertere start til et datetime objekt
     try:
@@ -46,7 +59,7 @@ def lag_ny_avtale() -> Optional[Avtale]:
         print("Du må skrive inn et gyldig tall for varighet!")
         return None
 
-    return Avtale(tittel, sted, start_tid, varighet_int)
+    return Avtale(tittel, sted, start_tid, varighet_int, kategori)
 
 
 # -----------------------------------------------------------
@@ -269,22 +282,13 @@ if __name__ == '__main__':
     kjor_meny_system()
     
 ###### ØVING 10 ######    
-class Kategori:
-    def __init__(self, ID: str, navn: str, prioritet: str):
-        self.ID = ID
-        self.navn = navn
-        self.prioritet = prioritet
-        
-        
-        
-    def __str__(self):
-     return f"ID={self.ID}, navn={self.navn}, prioritet={self.prioritet}"
+
 
     
     #Legg inn __STR__ (SE  LINJE 322!))
         
     
-def lag_ny_kategori() -> Optional[Kategori]:
+def lag_ny_kategori() -> Optional[Avtale.Kategori]:
   
 
     ID = input("Skriv inn  ID # ")
@@ -298,16 +302,16 @@ def lag_ny_kategori() -> Optional[Kategori]:
         print("Du må skrive inn et gyldig tall for prioritet!")
         return None
 
-    return Kategori(ID, navn, prioritet_int)
+    return Avtale.Kategori(ID, navn, prioritet_int)
 
-def skrive_kategori_til_fil(Kategori: List[Kategori]) -> None:
+def skrive_kategori_til_fil(Kategori: List[Avtale.Kategori]) -> None:
     "Skriver liste med kategorier til fil"
     json_object = json.dumps(Kategori, default=datetime_option,
                              indent=4, seperators=(',',':'))
     with open("kategori_lister.json", "w") as json_fil:
         json_fil.write(json_object)
 
-def skriv_ut_kategori(Kategori: List[Kategori], overskrift1=None) -> None:
+def skriv_ut_kategori(Kategori: List[Avtale.Kategori], overskrift1=None) -> None:
     "Skriver ut en liste med kategorier til skjermen"
     
     #Pga. Overskrift1 er frivillig så må vi se om overskriften er oppgitt.
